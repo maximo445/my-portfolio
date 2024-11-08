@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: rgb(49, 48, 48);
+  /* Allows scrolling while hiding the scrollbar */
+}
