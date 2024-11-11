@@ -1,3 +1,12 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHtml5,
+  faReact,
+  faCss3Alt,
+  faJs,
+} from "@fortawesome/free-brands-svg-icons";
+import { faWind } from "@fortawesome/free-solid-svg-icons";
+
 import { forwardRef } from "react";
 
 const Tools = forwardRef((props, ref) => {
@@ -12,25 +21,40 @@ const Tools = forwardRef((props, ref) => {
             Frontend Development
           </h2>
           <ul className=" grid grid-cols-2 gap-4 text-slate-100">
-            <li>
-              <h2>HTML</h2>
-              <p>Experienced</p>
+            <li className="flex justify-center items-center gap-5">
+              <FontAwesomeIcon icon={faHtml5} size="2x" color="yellow" />
+              <div className="text-left">
+                <h2>HTML</h2>
+                <p>Experienced</p>
+              </div>
             </li>
-            <li>
-              <h2>JavaScript</h2>
-              <p>Intermideate</p>
+            <li className="flex justify-center items-center gap-5">
+              <FontAwesomeIcon icon={faJs} size="2x" color="yellow" />
+              <div className="text-left">
+                <h2>JavaScript</h2>
+                <p>Intermideate</p>
+              </div>
             </li>
-            <li>
-              <h2>React JS</h2>
-              <p>Beginner</p>
+            <li className="flex justify-center items-center gap-5">
+              <FontAwesomeIcon icon={faReact} size="2x" color="yellow" />
+              <div className="text-left">
+                <h2>Reacct JS</h2>
+                <p>Beginner</p>
+              </div>
             </li>
-            <li>
-              <h2>CSS</h2>
-              <p>Intermediate</p>
+            <li className="flex justify-center items-center gap-5">
+              <FontAwesomeIcon icon={faCss3Alt} size="2x" color="yellow" />
+              <div className="text-left">
+                <h2>CSS</h2>
+                <p>Intermediate</p>
+              </div>
             </li>
-            <li>
-              <h2>Bootstrap</h2>
-              <p>Beginner</p>
+            <li className="flex justify-center items-center gap-5">
+              <FontAwesomeIcon icon={faWind} size="2x" color="yellow" />
+              <div className="text-left">
+                <h2>Tailwind CSS</h2>
+                <p>Interermiate</p>
+              </div>
             </li>
           </ul>
         </div>

@@ -1,9 +1,20 @@
-import { forwardRef } from "react";
+import { forwardRef, useEffect } from "react";
 import movieAppJPG from "../assets/movie-app-jpg.jpg";
 
 const Projects = forwardRef((props, ref) => {
   const aboutItemStyle =
     "bg-blue-950 text-center text-white p-4 rounded-lg flex-1 hover:bg-transparent  border-2 border-blue-950 hover:border-blue-600 transition-all  duration-500";
+
+  useEffect(() => {
+    const projects = document.querySelector("#projects-container");
+    projects.style.overflow = "hidden";
+    projects.style.overflowY = "scroll";
+    projects.style.scrollBar = "none";
+    return () => {
+      projects.style.overflow = "unset"; // Reset when component unmounts
+    };
+  }, []);
+
   return (
     <div id="projects" ref={ref} className="h-screen">
       <header className="flex flex-col justify-center items-center gap-1 text-slate-50">
@@ -11,7 +22,10 @@ const Projects = forwardRef((props, ref) => {
         <h1 className="font-bold text-blue-600 text-lg">Projects</h1>
       </header>
       <div className="flex justify-center items-center">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-3/5 p-5">
+        <div
+          id="projects-container"
+          className=" shadow-inner shadow-slate-900 md:shadow-none h-screen grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-3/5 p-5"
+        >
           <span className={aboutItemStyle}>
             <img className="rounded-xl" src={movieAppJPG} alt="" />
             <div className="pt-8 flex flex-col items-start gap-2">

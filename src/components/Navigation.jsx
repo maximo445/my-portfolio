@@ -9,7 +9,7 @@ function Navigation({
   const onSection = "bg-blue-500";
 
   return (
-    <ul className="flex mb-4 py-2 px-5 gap-3  fixed bottom-0 left-1/2 transform -translate-x-1/2 text-slate-50 rounded-xl backdrop-blur-md">
+    <ul className="flex mb-4 py-2 px-5 gap-3  fixed bottom-0 left-1/2 transform -translate-x-1/2 text-slate-50 rounded-xl bg-gray-700 bg-opacity-30 backdrop-blur-md">
       <li>
         <button
           className={`h-8 w-8 transition duration-500 rounded-full delay-150 hover:bg-slate-400 ${

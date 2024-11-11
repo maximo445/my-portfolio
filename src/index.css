@@ -3,6 +3,51 @@
 @tailwind utilities;
 
 body {
-  background: rgb(49, 48, 48);
-  /* Allows scrolling while hiding the scrollbar */
+  background-image: url("./assets/bacground.webp"),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-repeat: repeat-y; /* for vertical scroll */
+  background-attachment: fixed;
+  background-position: center;
+  background-position-y: calc(
+    50% - 20px
+  ); /* Adjust this for a slight parallax effect */
+  background-attachment: scroll;
+}
+
+/* For WebKit browsers (Chrome, Safari, etc.) */
+#projects-container {
+  overflow-y: scroll; /* Enable scrolling */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+#projects-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Chrome, Safari, Edge */
+}
+
+/* Custom scrollbar styles for WebKit browsers (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  border: 2px solid #f1f1f1; /* Adds padding around thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
 }

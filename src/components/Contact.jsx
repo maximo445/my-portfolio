@@ -1,3 +1,8 @@
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+library.add(faEnvelope);
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { forwardRef } from "react";
 
 const Contact = forwardRef((props, ref) => {
@@ -12,7 +17,7 @@ const Contact = forwardRef((props, ref) => {
     >
       <div className=" flex flex-col items-center justify-center text-center w-1/2">
         <div className={`w-4/5 bg-blue-950 p-7 rounded-xl ${toolsStyle}`}>
-          <h1 className="text-slate-100">logo</h1>
+          <FontAwesomeIcon icon={faEnvelope} size="2x" color="white" />
           <h1 className="text-slate-100">email</h1>
           <h1 className="text-slate-100 mb-7">britocoding@gmail.com</h1>
           <a

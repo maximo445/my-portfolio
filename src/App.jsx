@@ -4,6 +4,8 @@ import About from "./components/About";
 import Tools from "./components/Tools";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import SocialMedia from "./components/SocialMedia";
 
 import { useRef, useEffect, useState } from "react";
 
@@ -26,8 +28,9 @@ function App() {
 
   useEffect(() => {
     document.body.style.overflow = "hidden";
+    document.body.style.overflowY = "scroll";
     return () => {
-      document.body.style.overflow = "auto"; // Reset when component unmounts
+      document.body.style.overflow = "unset"; // Reset when component unmounts
     };
   }, []);
 
@@ -78,15 +81,18 @@ function App() {
   const scrollToContactRef = () =>
     contactRef.current.scrollIntoView({ behavior: "smooth" });
 
-  console.log(activeSection);
-
   return (
-    <div className="static overflow-y-scroll">
-      <Home ref={homeRef} toContact={scrollToContactRef} />
+    <div className="static">
+      <Home ref={homeRef} toContact={scrollToContactRef}>
+        <SocialMedia orientation={"vertical"} />
+      </Home>
       <About ref={aboutRef}></About>
       <Tools ref={toolsRef}></Tools>
       <Projects ref={projectsRef}></Projects>
       <Contact ref={contactRef}></Contact>
+      <Footer>
+        <SocialMedia orientation={"horizontal"} />
+      </Footer>
       <Navigation
         activeSection={activeSection}
         toAbout={scrollToAboutRef}
