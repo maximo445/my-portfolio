@@ -54,8 +54,8 @@ const Projects = forwardRef((props, ref) => {
           <span className={aboutItemStyle}>
             <img className="rounded-xl" src={timerAppJPG} alt="" />
             <div className="pt-8 flex flex-col items-start gap-2">
-              <h3 className="font-bold text-lg ">Movie App</h3>
-              <p className="font-extralight">JS HTML CSS</p>
+              <h3 className="font-bold text-lg ">Timer App</h3>
+              <p className="font-extralight">React Tailwind</p>
               <div className="flex gap-3">
                 <a
                   target="_blank"
