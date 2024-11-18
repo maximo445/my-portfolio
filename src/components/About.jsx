@@ -50,15 +50,14 @@ const About = forwardRef((props, ref) => {
             </span>
           </div>
           <p className="flex-1 lg:w-4/5 xl:w-3/5 md:w-full px-5 text-slate-100">
-            I'm a <strong>Software Engineering Undergradute</strong> at the
-            University of Kelaniya. I'm an enthusiastic and driven Software
-            Engineering student seeking a challenging internship opportunity to
-            apply and expand my technical skills. With a strong academic
-            foundation in software engineering and hands-on experience in
-            various programming languages, I am eager to contribute to
-            innovative projects and learn from experienced professionals in the
-            industry. I am a quick learner who is always ready to face
-            challenges.
+            I'm a <strong>Software Engineering Graduate</strong> from Miami Dade
+            College. I'm an enthusiastic and driven Software Engineering student
+            seeking a challenging junior or intership opportunity to apply and
+            expand my technical skills. With a strong academic foundation in
+            software engineering and hands-on experience in various programming
+            languages, I am eager to contribute to innovative projects and learn
+            from experienced professionals in the industry. I am a quick learner
+            who is always ready to face challenges.
           </p>
         </div>
       </div>

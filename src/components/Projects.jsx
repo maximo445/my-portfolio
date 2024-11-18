@@ -1,9 +1,10 @@
 import { forwardRef, useEffect } from "react";
 import movieAppJPG from "../assets/movie-app-jpg.jpg";
+import timerAppJPG from "../assets/timer-app-jpg.jpg";
 
 const Projects = forwardRef((props, ref) => {
   const aboutItemStyle =
-    "bg-blue-950 text-center text-white p-4 rounded-lg flex-1 hover:bg-transparent  border-2 border-blue-950 hover:border-blue-600 transition-all  duration-500";
+    "bg-blue-950 text-center text-white p-4 rounded-lg flex-1 hover:bg-transparent  border-2 border-blue-950 hover:border-blue-600 transition-all  duration-500 h-80";
 
   useEffect(() => {
     const projects = document.querySelector("#projects-container");
@@ -31,49 +32,46 @@ const Projects = forwardRef((props, ref) => {
             <div className="pt-8 flex flex-col items-start gap-2">
               <h3 className="font-bold text-lg ">Movie App</h3>
               <p className="font-extralight">JS HTML CSS</p>
-              <button className="border-2 border-blue-600 transition-all  duration-500 px-3 py-1 rounded-lg hover:bg-slate-300 hover:border-slate-300 hover:text-slate-700">
-                Github
-              </button>
+              <div className="flex gap-3">
+                <a
+                  target="_blank"
+                  href="https://github.com/maximo445/mov-io"
+                  className="border-2 border-blue-600 transition-all  duration-500 px-3 py-1 rounded-lg hover:bg-slate-300 hover:border-slate-300 hover:text-slate-700"
+                >
+                  Github
+                </a>
+                <a
+                  target="_blank"
+                  href="https://master--phenomenal-sprite-1e0c0e.netlify.app/"
+                  className="border-2 border-blue-600 transition-all  duration-500 px-3 py-1 rounded-lg hover:bg-slate-300 hover:border-slate-300 hover:text-slate-700"
+                >
+                  Visit
+                </a>
+              </div>
             </div>
           </span>
+
           <span className={aboutItemStyle}>
-            <img className="rounded-xl" src={movieAppJPG} alt="" />
+            <img className="rounded-xl" src={timerAppJPG} alt="" />
             <div className="pt-8 flex flex-col items-start gap-2">
               <h3 className="font-bold text-lg ">Movie App</h3>
               <p className="font-extralight">JS HTML CSS</p>
-              <button className="border-2 border-blue-600 transition-all  duration-500 px-3 py-1 rounded-lg hover:bg-slate-300 hover:border-slate-300 hover:text-slate-700">
-                Github
-              </button>
-            </div>
-          </span>
-          <span className={aboutItemStyle}>
-            <img className="rounded-xl" src={movieAppJPG} alt="" />
-            <div className="pt-8 flex flex-col items-start gap-2">
-              <h3 className="font-bold text-lg ">Movie App</h3>
-              <p className="font-extralight">JS HTML CSS</p>
-              <button className="border-2 border-blue-600 transition-all  duration-500 px-3 py-1 rounded-lg hover:bg-slate-300 hover:border-slate-300 hover:text-slate-700">
-                Github
-              </button>
-            </div>
-          </span>
-          <span className={aboutItemStyle}>
-            <img className="rounded-xl" src={movieAppJPG} alt="" />
-            <div className="pt-8 flex flex-col items-start gap-2">
-              <h3 className="font-bold text-lg ">Movie App</h3>
-              <p className="font-extralight">JS HTML CSS</p>
-              <button className="border-2 border-blue-600 transition-all  duration-500 px-3 py-1 rounded-lg hover:bg-slate-300 hover:border-slate-300 hover:text-slate-700">
-                Github
-              </button>
-            </div>
-          </span>
-          <span className={aboutItemStyle}>
-            <img className="rounded-xl" src={movieAppJPG} alt="" />
-            <div className="pt-8 flex flex-col items-start gap-2">
-              <h3 className="font-bold text-lg ">Movie App</h3>
-              <p className="font-extralight">JS HTML CSS</p>
-              <button className="border-2 border-blue-600 transition-all  duration-500 px-3 py-1 rounded-lg hover:bg-slate-300 hover:border-slate-300 hover:text-slate-700">
-                Github
-              </button>
+              <div className="flex gap-3">
+                <a
+                  target="_blank"
+                  href="https://github.com/maximo445/timer"
+                  className="border-2 border-blue-600 transition-all  duration-500 px-3 py-1 rounded-lg hover:bg-slate-300 hover:border-slate-300 hover:text-slate-700"
+                >
+                  Github
+                </a>
+                <a
+                  target="_blank"
+                  href="https://maximo445.github.io/timer/"
+                  className="border-2 border-blue-600 transition-all  duration-500 px-3 py-1 rounded-lg hover:bg-slate-300 hover:border-slate-300 hover:text-slate-700"
+                >
+                  Visit
+                </a>
+              </div>
             </div>
           </span>
         </div>

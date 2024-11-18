@@ -6,12 +6,12 @@ const Home = forwardRef((props, ref) => {
     <section
       ref={ref}
       id="home"
-      className="h-screen flex flex-col justify-between items-center pt-11"
+      className="h-screen flex flex-col justify-around items-center pt-11 md:justify-between"
     >
       <header className="flex flex-col justify-center items-center gap-1 text-slate-50">
         <p>Hello, I'am</p>
         <h1 className="font-bold text-5xl">Maximo Brito</h1>
-        <p className="my-4 text-slate-500">Software Engineere Undergraduate</p>
+        <p className="my-4 text-slate-500">Software Engineere Graduate</p>
         <div className="mt-4">
           <a
             href="../assets/maximo.brito.resume.pdf"

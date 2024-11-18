@@ -15,7 +15,7 @@ const Contact = forwardRef((props, ref) => {
       ref={ref}
       className="h-screen flex items-center justify-center"
     >
-      <div className=" flex flex-col items-center justify-center text-center w-1/2">
+      <div className=" flex flex-col items-center justify-center text-center w-80">
         <div className={`w-4/5 bg-blue-950 p-7 rounded-xl ${toolsStyle}`}>
           <FontAwesomeIcon icon={faEnvelope} size="2x" color="white" />
           <h1 className="text-slate-100">email</h1>
