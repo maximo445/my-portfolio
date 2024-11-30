@@ -14,7 +14,7 @@ const Home = forwardRef((props, ref) => {
         <p className="my-4 text-slate-500">Software Engineere Graduate</p>
         <div className="mt-4">
           <a
-            href="../assets/maximo.brito.resume.pdf"
+            href="../assets/maximo.brito.a.resume.pdf"
             download="maximo.brito.pdf"
             className="px-5 py-2 border-solid border-2 border-indigo-600 text-indigo-600 rounded-md m-2"
           >
