@@ -80,7 +80,7 @@ const Projects = forwardRef((props, ref) => {
           <span className={aboutItemStyle}>
             <img className="rounded-xl" src={quizzerAppJPG} alt="" />
             <div className="pt-8 flex flex-col items-start gap-2">
-              <h3 className="font-bold text-lg ">ProNote</h3>
+              <h3 className="font-bold text-lg ">Quizzer</h3>
               <p className="font-extralight">React JS Tailwind CSS</p>
               <div className="flex gap-3">
                 <a
