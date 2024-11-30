@@ -1,10 +1,12 @@
 import { forwardRef, useEffect } from "react";
 import movieAppJPG from "../assets/movie-app-jpg.jpg";
 import timerAppJPG from "../assets/timer-app-jpg.jpg";
+import notebookAppJPG from "../assets/notebook-capure.jpg";
+import quizzerAppJPG from "../assets/quizzer-io.jpg";
 
 const Projects = forwardRef((props, ref) => {
   const aboutItemStyle =
-    "bg-blue-950 text-center text-white p-4 rounded-lg flex-1 hover:bg-transparent  border-2 border-blue-950 hover:border-blue-600 transition-all  duration-500 h-80";
+    "bg-blue-950 text-center text-white p-4 rounded-lg flex-1 sm:hover:bg-transparent  border-2 border-blue-950 hover:border-blue-600 transition-all  duration-500 h-80";
 
   useEffect(() => {
     const projects = document.querySelector("#projects-container");
@@ -43,6 +45,54 @@ const Projects = forwardRef((props, ref) => {
                 <a
                   target="_blank"
                   href="https://master--phenomenal-sprite-1e0c0e.netlify.app/"
+                  className="border-2 border-blue-600 transition-all  duration-500 px-3 py-1 rounded-lg hover:bg-slate-300 hover:border-slate-300 hover:text-slate-700"
+                >
+                  Visit
+                </a>
+              </div>
+            </div>
+          </span>
+
+          <span className={aboutItemStyle}>
+            <img className="rounded-xl" src={notebookAppJPG} alt="" />
+            <div className="pt-8 flex flex-col items-start gap-2">
+              <h3 className="font-bold text-lg ">ProNote</h3>
+              <p className="font-extralight">React JS Tailwind CSS</p>
+              <div className="flex gap-3">
+                <a
+                  target="_blank"
+                  href="https://github.com/maximo445/note-project-manager"
+                  className="border-2 border-blue-600 transition-all  duration-500 px-3 py-1 rounded-lg hover:bg-slate-300 hover:border-slate-300 hover:text-slate-700"
+                >
+                  Github
+                </a>
+                <a
+                  target="_blank"
+                  href="https://maximo445.github.io/note-project-manager/"
+                  className="border-2 border-blue-600 transition-all  duration-500 px-3 py-1 rounded-lg hover:bg-slate-300 hover:border-slate-300 hover:text-slate-700"
+                >
+                  Visit
+                </a>
+              </div>
+            </div>
+          </span>
+
+          <span className={aboutItemStyle}>
+            <img className="rounded-xl" src={quizzerAppJPG} alt="" />
+            <div className="pt-8 flex flex-col items-start gap-2">
+              <h3 className="font-bold text-lg ">ProNote</h3>
+              <p className="font-extralight">React JS Tailwind CSS</p>
+              <div className="flex gap-3">
+                <a
+                  target="_blank"
+                  href="https://github.com/maximo445/quizzer-io"
+                  className="border-2 border-blue-600 transition-all  duration-500 px-3 py-1 rounded-lg hover:bg-slate-300 hover:border-slate-300 hover:text-slate-700"
+                >
+                  Github
+                </a>
+                <a
+                  target="_blank"
+                  href="https://maximo445.github.io/quizzer-io/"
                   className="border-2 border-blue-600 transition-all  duration-500 px-3 py-1 rounded-lg hover:bg-slate-300 hover:border-slate-300 hover:text-slate-700"
                 >
                   Visit
